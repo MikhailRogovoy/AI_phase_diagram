@@ -1,0 +1,40 @@
+Sample Metrics Report
+==================================================
+Sample 0
+Confusion Matrix:
+182  0
+0  10
+Predicted Target: 0
+--------------------------------------------------
+Sample 1
+Confusion Matrix:
+1  0
+0  63
+Predicted Target: 1
+--------------------------------------------------
+Sample 2
+Confusion Matrix:
+0  0
+0  64
+Predicted Target: 1
+--------------------------------------------------
+Sample 3
+Confusion Matrix:
+0  0
+0  64
+Predicted Target: 1
+--------------------------------------------------
+Sample 4
+Confusion Matrix:
+0  0
+0  64
+Predicted Target: 1
+--------------------------------------------------
+Sample 5
+Confusion Matrix:
+0  0
+0  64
+Predicted Target: 1
+--------------------------------------------------
+==================================================
+End of Report
