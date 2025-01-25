@@ -3,7 +3,7 @@
 
 
 # Описание структуры проекта
-
+Весь код проекта представлен в файлах .py и дублирующие их .ipynb
 
 Папка data
 ----------------
@@ -36,17 +36,17 @@
 Папка Metrics_For_Model_0_1
 -------------------------------
 Содержит коды для вычисления метрик классификации модели 0-1:
-- ML_Model_0_1_Selection.ipynb  
+- ML_Model_0_1_Selection.ipynb / ML_Model_0_1_Selection.py
   Вывод метрик для различных моделей машинного обучения.  
   - Вход: Main_Data_Model_0_1.csv  
   - Выход: Метрики.
 
-- Full_Metrics_For_Model_0_1_XGBoost.ipynb  
+- Full_Metrics_For_Model_0_1_XGBoost.ipynb / Full_Metrics_For_Model_0_1_XGBoost.py
   Метрики для модели XGBoost (включая кросс-валидацию, SHAP и важность признаков).  
   - Вход: Main_Data_Model_0_1.csv  
   - Выход: Метрики, кросс-валидация, SHAP.
 
-- DecisionTree_Visual_For_0_1.ipynb  
+- DecisionTree_Visual_For_0_1.ipynb / DecisionTree_Visual_For_0_1.py
   Визуализация дерева решений (параметры Gini и Entropy).  
   - Вход: Main_Data_Model_0_1.csv  
   - Выход: Полные и упрощенные деревья решений.
@@ -56,12 +56,12 @@
 Папка Predict_Samples_For_Model_0_1
 ---------------------------------------
 Содержит коды для предсказания классификации модели 0-1:
-- Predict_Samples_For_Model_0_1.ipynb  
+- Predict_Samples_For_Model_0_1.ipynb / Predict_Samples_For_Model_0_1.py
   Добавляет колонки Predicted_Target и Predict_Proba в слепые данные.  
   - Вход: Main_Data_Model_0_1.csv, Samples_For_Model_0_1_J1.csv, или Samples_For_Model_0_1_J-1.csv  
   - Выход: Predict_Samples_For_Model_0_1_J1.csv или Predict_Samples_For_Model_0_1_J-1.csv.
 
-- Predict_Metrics_Samples_For_Model_0_1.ipynb  
+- Predict_Metrics_Samples_For_Model_0_1.ipynb / Predict_Metrics_Samples_For_Model_0_1.py
   Вывод метрик по семплам с сохранением результатов в .txt и .csv.  
   - Вход: Main_Data_Model_0_1.csv, Samples_For_Model_0_1_J1.csv, или Samples_For_Model_0_1_J-1.csv  
   - Выход: Метрики для семплов.
@@ -71,7 +71,7 @@
 Папка Threshold_Selection_For_Samples_Model_0_1
 ---------------------------------------------------
 Содержит коды для выбора порога (threshold):
-- Threshold_Selection_For_Samples_Model_0_1.ipynb  
+- Threshold_Selection_For_Samples_Model_0_1.ipynb / Threshold_Selection_For_Samples_Model_0_1.py
   Добавляет столбцы с предсказаниями (predict, predict_tuned, predict_by_hand).  
   - Вход: Main_Data_Model_0_1.csv, Samples_For_Model_0_1_J1.csv, или Samples_For_Model_0_1_J-1.csv  
   - Выход: Predict_Samples_For_Model_0_1_J1.csv или Predict_Samples_For_Model_0_1_J-1.csv.
@@ -81,12 +81,12 @@
 Папка Drop_Column_For_Model_0_1
 -----------------------------------
 Содержит коды для использования определенных признаков:
-- Full_Metrics_Xfm_C_For_Model_0_1.ipynb  
+- Full_Metrics_Xfm_C_For_Model_0_1.ipynb / Full_Metrics_Xfm_C_For_Model_0_1.py
   Оставляет только Xfm (магнитная восприимчивость) и C (теплоемкость).  
   - Вход: Main_Data_Model_0_1.csv  
   - Выход: Метрики, кросс-валидация, SHAP.
 
-- Full_Metrics_Fm_C_For_Model_0_1.ipynb  
+- Full_Metrics_Fm_C_For_Model_0_1.ipynb / Full_Metrics_Fm_C_For_Model_0_1.py
   Оставляет только Fm (ферромагнитная намагниченность) и C.  
   - Вход: Main_Data_Model_0_1.csv  
   - Выход: Метрики, кросс-валидация, SHAP.
@@ -122,7 +122,7 @@
 Папка Find_Best_Splitting_Data
 ----------------------------------
 Содержит код для поиска наилучшего разделения классов:
-- Find_Best_Splitting_Data_For_Models.ipynb  
+- Find_Best_Splitting_Data_For_Models.ipynb / Find_Best_Splitting_Data_For_Models.py 
   Определяет поле для разделения классов.  
   - Вход: initial_data_0_1.csv или initial_data_0_2.csv.  
   - Выход: График ROC-AUC.
